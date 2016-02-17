@@ -17,5 +17,5 @@ git config --global http.proxy https://104.129.196.32:443
 To test a CNS model:
 http://localhost/cnst.concepts/cns/cns.php?prod=S0018&apikey=b2694f2382a7a97ce2d39b8f9d085e67
 
--Substitute appropriate product ID
--note the apikey attribute which MUST be specified
+- Substitute appropriate product ID
+- note the apikey attribute which MUST be specified
