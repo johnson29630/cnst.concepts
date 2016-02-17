@@ -6,7 +6,7 @@
 
     G:\WTServer\WWW\cnst.concepts
 	
-	- path to match your installation
+	-path to match your installation
 
 	
 github proxy setting:
