@@ -1,0 +1,10 @@
+/* cns.css */
+.cns_app {
+	cursor:pointer;
+	border-bottom:1px solid #999999;
+	min-height:24px;
+}
+p.cns_app {
+	margin:0 0 0 0;
+	font-size:16px;
+}
