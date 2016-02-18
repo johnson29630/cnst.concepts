@@ -198,3 +198,6 @@ div.CNS_wrapper {
 .helpWrapperFrame {
 	background-color:#fff;
 }
+.extNavMenu {
+	margin:0 -10px 4px -10px;padding-left:10px;background-color:#ddd;color:#222;
+}
