@@ -77,5 +77,5 @@ define("WORDING_REMEMBER_ME", "Keep me logged in (for 2 weeks)");
 define("WORDING_REQUEST_PASSWORD_RESET", "Request a password reset. Enter your username and you'll get a mail with instructions:");
 define("WORDING_RESET_PASSWORD", "Reset my password");
 define("WORDING_SUBMIT_NEW_PASSWORD", "Submit new password");
-define("WORDING_USERNAME", "Username");
+define("WORDING_USERNAME", "Email address"); /* 2016.02.22 */
 define("WORDING_YOU_ARE_LOGGED_IN_AS", "You are logged in as ");

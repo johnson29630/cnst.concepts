@@ -112,4 +112,4 @@ define("EMAIL_VERIFICATION_CONTENT", "Please click on this link to activate your
  *
  * This constant will be used in the login and the registration class.
  */
-define("HASH_COST_FACTOR", "10");
+define("HASH_COST_FACTOR", "8"); /* 2016.02.22 was "10" */

@@ -77,12 +77,16 @@ class Registration
     /**
      * handles the entire registration process. checks all error possibilities, and creates a new user in the database if
      * everything is fine
+     * 
+     * 2016.02.22 Paul Johnson
+     * use email as user name, disable checks on user name
      */
     private function registerNewUser($user_name, $user_email, $user_password, $user_password_repeat, $captcha)
     {
         // we just remove extra space on username and email
         $user_name  = trim($user_name);
         $user_email = trim($user_email);
+        $user_name=$user_email; /* 2016.02.22 */
 
         // check provided data validity
         // TODO: check for "return true" case early, so put this first
@@ -98,9 +102,9 @@ class Registration
             $this->errors[] = MESSAGE_PASSWORD_TOO_SHORT;
         } elseif (strlen($user_name) > 64 || strlen($user_name) < 2) {
             $this->errors[] = MESSAGE_USERNAME_BAD_LENGTH;
-        } elseif (!preg_match('/^[a-z\d]{2,64}$/i', $user_name)) {
+        } /* 2016.02.22 elseif (!preg_match('/^[a-z\d]{2,64}$/i', $user_name)) {
             $this->errors[] = MESSAGE_USERNAME_INVALID;
-        } elseif (empty($user_email)) {
+        } */ elseif (empty($user_email)) {
             $this->errors[] = MESSAGE_EMAIL_EMPTY;
         } elseif (strlen($user_email) > 64) {
             $this->errors[] = MESSAGE_EMAIL_TOO_LONG;
