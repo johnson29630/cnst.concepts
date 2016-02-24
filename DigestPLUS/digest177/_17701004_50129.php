@@ -81,6 +81,10 @@ window.publicationName = "Digest 177";
 
 <script src="http://www.productinfo.schneider-electric.com/portals/ui/_theme/digest/scripts/viewer.js"></script>
 <script src="http://www.productinfo.schneider-electric.com/portals/ui/_theme/digest/scripts/table-watermarks.js"></script>
+
+<!-- d+ext extensions -->
+<script src="../ext/extend.js"></script>
+<link rel="stylesheet" href="../ext/extend.css"></link>
 </head>
 
 

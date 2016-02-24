@@ -72,8 +72,8 @@ $(function() {
 
 
 <!-- d+ext extensions -->
-<script src="../d+ext/extend.js"></script>
-<link rel="stylesheet" href="../d+ext/extend.css"></link>
+<script src="../ext/extend.js"></script>
+<link rel="stylesheet" href="../ext/extend.css"></link>
 </head>
 
 <body class="readerPage" data-pageId=6ff228e6-0371-4ad3-a648-fd2383c59ee9>

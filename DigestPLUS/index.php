@@ -47,9 +47,10 @@ DigestPLUS Concept
 <script src="./index_files/application-f3877c9615d162a6c9e96ef9911ff12e.js" type="text/javascript"></script>
 <meta content="authenticity_token" name="csrf-param">
 <meta content="wD+fzHA3BTVOOJkFRPUXuOsobN7FHWv0XdYaDT0INtc=" name="csrf-token">
+
 <!-- d+ext additional extension resources -->
-<script src="d+ext/extend.js"></script>
-<link rel="stylesheet" href="d+ext/extend.css"></link>
+<script src="ext/extend.js"></script>
+<link rel="stylesheet" href="ext/extend.css"></link>
 </head>
 <body>
 <div class="container">

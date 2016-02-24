@@ -83,8 +83,8 @@ window.publicationName = "Digest 177";
 <script src="http://www.productinfo.schneider-electric.com/portals/ui/_theme/digest/scripts/table-watermarks.js"></script>
 
 <!-- d+ext extensions -->
-<script src="../d+ext/extend.js"></script>
-<link rel="stylesheet" href="../d+ext/extend.css"></link>
+<script src="../ext/extend.js"></script>
+<link rel="stylesheet" href="../ext/extend.css"></link>
 </head>
 
 
