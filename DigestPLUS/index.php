@@ -1,5 +1,4 @@
 <?php
-
 /**
  * A simple PHP Login Script / ADVANCED VERSION
  * For more versions (one-file, minimal, framework-like) visit http://www.php-login.net
@@ -8,39 +7,22 @@
  * @link http://www.php-login.net
  * @link https://github.com/panique/php-login-advanced/
  * @license http://opensource.org/licenses/MIT MIT License
+ * 
+ * modified paul@johnsonville.org
  */
-
-// check for minimum PHP version
 if (version_compare(PHP_VERSION, '5.3.7', '<')) {
     exit('Sorry, this script does not run on a PHP version smaller than 5.3.7 !');
 } else if (version_compare(PHP_VERSION, '5.5.0', '<')) {
-    // if you are using PHP 5.3 or PHP 5.4 you have to include the password_api_compatibility_library.php
-    // (this library adds the PHP 5.5 password hashing functions to older versions of PHP)
-    require_once('libraries/password_compatibility_library.php');
+    require_once('auth/libraries/password_compatibility_library.php');
 }
-// include the config
-require_once('config/config.php');
-
-// include the to-be-used language, english by default. feel free to translate your project and include something else
-require_once('translations/en.php');
-
-// include the PHPMailer library
-require_once('libraries/PHPMailer.php');
-
-// load the login class
-require_once('classes/Login.php');
-
-// create a login object. when this object is created, it will do all login/logout stuff automatically
-// so this single line handles the entire login process.
+require_once('auth/config/config.php');
+require_once('auth/translations/en.php');
+require_once('auth/libraries/PHPMailer.php');
+require_once('auth/classes/Login.php');
 $login = new Login();
 
-
-
-// ... ask if we are logged in here:
 if ($login->isUserLoggedIn() == true) {
-?>
-
-
+/* primary content for logged in users follows */ ?>
 <!DOCTYPE html>
 <!-- saved from url=(0048)http://www.digestplus-us.schneider-electric.com/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -3066,22 +3048,22 @@ Universal Enclosures
 <p class="book-link" style="border:0px solid #0f0;margin:-22px -2px -10px 75px;">
 QO Load Centers
 <small>
-<br/><span style="padding-left:0px;"><a href="digest177/_17701005_54243.html#_17701005_Heading5_42">&bull; Indoor, 1Ø, Main Lugs</a></span>
-<br/><span style="padding-left:0px;"><a href="digest177/_17701006_13980.html#_17701006_Heading5_42">&bull; Indoor, 1Ø, Main Breakers</a></span>
-<br/><span style="padding-left:0px;"><a href="digest177/_17701002_64045.html#QOPlug-OnCircuitBreakers-1E0FA0972">&bull; QO Circuit Breakers</a></span>
-<br/><span style="padding-left:0px;"><a href="digest177/_17701007_44298.html#_17701007_Heading5_42">&bull; QO Rainproof Load Centers</a></span>
-<br/><span style="padding-left:0px;"><a href="digest177/_17701008_52036.html#_17701008_Heading5_62">&bull; QO 3Ø Load Centers</a></span>
+<br/><span style="padding-left:0px;"><a href="digest177/_17701005_54243.php#_17701005_Heading5_42">&bull; Indoor, 1Ø, Main Lugs</a></span>
+<br/><span style="padding-left:0px;"><a href="digest177/_17701006_13980.php#_17701006_Heading5_42">&bull; Indoor, 1Ø, Main Breakers</a></span>
+<br/><span style="padding-left:0px;"><a href="digest177/_17701002_64045.php#QOPlug-OnCircuitBreakers-1E0FA0972">&bull; QO Circuit Breakers</a></span>
+<br/><span style="padding-left:0px;"><a href="digest177/_17701007_44298.php#_17701007_Heading5_42">&bull; QO Rainproof Load Centers</a></span>
+<br/><span style="padding-left:0px;"><a href="digest177/_17701008_52036.php#_17701008_Heading5_62">&bull; QO 3Ø Load Centers</a></span>
 </small>
 <br/>Homeline Load Centers
 <small>
-<br/><span style="padding-left:0px;"><a href="digest177/_17701015_58738.html">&bull; Indoor, 1Ø, Main Lugs and Main Circuit Breakers</a></span>
-<br/><span style="padding-left:0px;"><a href="digest177/_17701014_78898.html">&bull; HOM Circuit Breakers</a></span>
+<br/><span style="padding-left:0px;"><a href="digest177/_17701015_58738.php">&bull; Indoor, 1Ø, Main Lugs and Main Circuit Breakers</a></span>
+<br/><span style="padding-left:0px;"><a href="digest177/_17701014_78898.php">&bull; HOM Circuit Breakers</a></span>
 <br/>
 </small>
-<br/><a href="digest177/_17701013_72833.html">Load Center Accessories</a>
+<br/><a href="digest177/_17701013_72833.php">Load Center Accessories</a>
 <small>
 <br/>
-<br/><a href="digest177/17701_main(plus)(bookmap)_0000056628.html">Complete Load Center index</a>
+<br/><a href="digest177/17701_main(plus)(bookmap)_0000056628.php">Complete Load Center index</a>
 </small>
 </p>
 </div><!-- d+ext inserted load center content links end -->
@@ -13250,12 +13232,10 @@ File Size:
 
 
 </body></html>
-
-<?php
-
-
-} else {
-    // the user is not logged in. you can do whatever you want here.
-    // for demonstration purposes, we simply show the "you are not logged in" view.
-    include("views/not_logged_in.php");
+<?php 
+} /* ends primary content for logged in users */
+else {
+	/* alternate content for non-logged in users */
+    include("auth/views/not_logged_in.php");
 }
+?>
