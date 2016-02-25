@@ -36,6 +36,12 @@ div.extBtnSelect {
 	background-color:#ffffff;
 	cursor:default;
 }
+div.extBtnDisabled {
+	background-color:#cccccc;
+	color:#aaaaaa;
+	cursor:default;
+	border:1px solid #aaaaaa;
+}
 div.extBtnSpacer {
 	height:11px;
 }

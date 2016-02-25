@@ -171,6 +171,8 @@ function clickTabWizard(){
 			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
 		case "_17701006_13980":assistant="CNST";prod_id="E2.0000";prod_ap="1Ph3W 120/240 Indoor";
 			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
+		case "_17701015_58738":assistant="CNST";prod_id="E2.0000";prod_ap="1Ph3W 120/240 Indoor";
+			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
 		case "x_17701002_64045":assistant="CNS";prod_id="SA518";prod_ap="1Ph3W 120/240 Indoor";break;
 			/* todo: pass selection data from target to host, use to open proper application subset */
 		case "xGeneralDutyUpTo100KAShortCircuitCur-80671D9E":assistant="CNS";prod_id="S0028";prod_ap="General Duty Safety Switches";break;
