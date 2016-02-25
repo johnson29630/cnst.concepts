@@ -1,17 +1,17 @@
 
 /* digest section index links with assistants  window.refId = "xxxx"; */
-var cns=['_17701005_54243','_17701006_13980','_17701002_64045'];
-cns=cns.concat(['GeneralDutyUpTo100KAShortCircuitCur-80671D9E']);
-cns=cns.concat(['EnergyEfficientSinglePhaseAndSingle-70EE2DE3']);
-cns=cns.concat(['_17723004_77624']);
-cns=cns.concat(['XB6CompleteDevices-0569EFCD']);
+var cns=['x_17701005_54243','_17701006_13980','_17701002_64045'];
+cns=cns.concat(['xGeneralDutyUpTo100KAShortCircuitCur-80671D9E']);
+cns=cns.concat(['xEnergyEfficientSinglePhaseAndSingle-70EE2DE3']);
+cns=cns.concat(['x_17723004_77624']);
+cns=cns.concat(['xXB6CompleteDevices-0569EFCD']);
 
 /* digest sections (in master index) with assistants */
-var hasAssist=["17701_main(plus)(bookmap)_0000056628.html"];
-hasAssist=hasAssist.concat(["17703_main(plus)(bookmap)_0000060130.html"]);
-hasAssist=hasAssist.concat(["17714_main(plus)(bookmap)_0000061044.html"]);
-hasAssist=hasAssist.concat(["17723_main(plus)(bookmap)_0000064354.html"]);
-hasAssist=hasAssist.concat(["17719_main(plus)(bookmap)_0000052086.html"]);
+var hasAssist=["x17701_main(plus)(bookmap)_0000056628.html"];
+hasAssist=hasAssist.concat(["x17703_main(plus)(bookmap)_0000060130.html"]);
+hasAssist=hasAssist.concat(["x17714_main(plus)(bookmap)_0000061044.html"]);
+hasAssist=hasAssist.concat(["x17723_main(plus)(bookmap)_0000064354.html"]);
+hasAssist=hasAssist.concat(["x17719_main(plus)(bookmap)_0000052086.html"]);
 
 
 var nextStep="";
@@ -24,13 +24,16 @@ var tempTopicViewUrl="";
 
 window.publicationLandingPage = "digest177.html";
 
+window.addEventListener("load", ext_onload)
+
 function ext_onload() {
+	console.log("ext_onload initiated")
 	/* additional elements */
 	
-	if (cns.indexOf(window.refId)>=0) {
+/*	if (cns.indexOf(window.refId)>=0) {
 		document.getElementById("tocPortal").getElementsByTagName("div").item(0).innerHTML+='<div class="extBtnGrp"><div class="extBtn" onclick="clickTabIndex()" id="extTabIndex">Index</div><div class="extBtn" onclick="clickTabWizard()" id="extTabWizard">Selection&#160;Assistant<i class="fa fa-user iconWiz"></i></div></div><div class="CNS_wrapper" id="CNS_wrapper"></div>';
 
-	}
+	}*/
 	if (document.getElementById('tocPortal')) {
 		if (document.getElementById('viewerContent')) {
 			
@@ -63,7 +66,7 @@ function ext_onload() {
 
 	/* remap load center links */
 	if (typeof(window.refId)=="string") {
-	if (window.refId.substr(0,6) == "_17701") {
+	if (window.refId.substr(0,6) == "x_17701") {
 		els=document.getElementsByTagName("a")
 		var u1="http://www.productinfo.schneider-electric.com/portals/ui/digest/viewer/561d5d65e4b0c5c41a243bf2/";
 		var u2="http://localhost/dce/concepts/d1/";u2="";
@@ -134,8 +137,7 @@ function ext_onload() {
 
 	//alert('ext_onload()');
 
-
-
+	console.log("ext_onload complete")
 }
 function extCartCreate(){
 				/* add cart to content pages */
@@ -149,43 +151,45 @@ function extCartHelp() {
 	window.open('//quotefast.schneider-electric.com/QuoteFast/QFHelp/prodhelp.php?ndx=43359','_blank')
 }
 function clickTabIndex(){
+	console.log("clickTabIndex initiated")
 	document.getElementById("extTabIndex").className="extBtn extBtnSelect";
 	document.getElementById("extTabWizard").className="extBtn";
 	document.getElementById("CNS_wrapper").style.display="none";
 }
 function clickTabWizard(){
+	console.log("clickTabWizard initiated")
 	var prod_id="";
 	var prod_ap="";
 	var assistant="";
 	nextStep="";
 	nextLink="";
 	switch(window.refId) {
-		case "_17701005_54243":assistant="CNS";prod_id="S0018";prod_ap="1Ph3W 120/240 Indoor";
+		case "x_17701005_54243":assistant="CNS";prod_id="S0018";prod_ap="1Ph3W 120/240 Indoor";
 			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
 		case "x_17701006_13980":assistant="CNS";prod_id="S0018";prod_ap="1Ph3W 120/240 Indoor";
 			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
 		case "_17701006_13980":assistant="CNST";prod_id="E2.0000";prod_ap="1Ph3W 120/240 Indoor";
 			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
-		case "_17701002_64045":assistant="CNS";prod_id="SA518";prod_ap="1Ph3W 120/240 Indoor";break;
+		case "x_17701002_64045":assistant="CNS";prod_id="SA518";prod_ap="1Ph3W 120/240 Indoor";break;
 			/* todo: pass selection data from target to host, use to open proper application subset */
-		case "GeneralDutyUpTo100KAShortCircuitCur-80671D9E":assistant="CNS";prod_id="S0028";prod_ap="General Duty Safety Switches";break;
+		case "xGeneralDutyUpTo100KAShortCircuitCur-80671D9E":assistant="CNS";prod_id="S0028";prod_ap="General Duty Safety Switches";break;
 		case "xGeneralDutyUpTo100KAShortCircuitCur-80671D9E":assistant="EZ";prod_id="A028";prod_ap="";break;
-		case "EnergyEfficientSinglePhaseAndSingle-70EE2DE3":assistant="EZ";prod_id="A044";prod_ap="EE";break;
-		case "_17723004_77624":assistant="CNS";prod_id="SC233";prod_ap="Miniature Relay (3-12A, 2PDT,3PDT,4PDT)";break;
-		case "XB6CompleteDevices-0569EFCD":assistant="CNS";prod_id="S9001";prod_ap="16mm XB6 Operators";break;
+		case "xEnergyEfficientSinglePhaseAndSingle-70EE2DE3":assistant="EZ";prod_id="A044";prod_ap="EE";break;
+		case "x_17723004_77624":assistant="CNS";prod_id="SC233";prod_ap="Miniature Relay (3-12A, 2PDT,3PDT,4PDT)";break;
+		case "xXB6CompleteDevices-0569EFCD":assistant="CNS";prod_id="S9001";prod_ap="16mm XB6 Operators";break;
 	}
 	document.getElementById("extTabIndex").className="extBtn";
 	document.getElementById("extTabWizard").className="extBtn extBtnSelect";
 	document.getElementById("CNS_wrapper").style.top="82px";
 	document.getElementById("CNS_wrapper").style.left="-21px";
-	document.getElementById("CNS_wrapper").style.width="404px"; /* 358 fits index area */
+	document.getElementById("CNS_wrapper").style.width="360px"; /* 358 fits index area */
 	document.getElementById("CNS_wrapper").style.height="90%";
 	if (assistant=="CNS") {
-		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"../CNS/CNS.php?prod="+prod_id+"&app="+prod_ap+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\"></iframe>"; 
+		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod_id+"&app="+prod_ap+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\"></iframe>"; 
 		document.getElementById("CNS_wrapper").style.display="block";
 	}
 	if (assistant=="CNST") {
-		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"../../../sowp/cnst.php?prod="+prod_id+"&app="+prod_ap+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\"></iframe>"; 
+		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod_id+"&app="+prod_ap+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\"></iframe>"; 
 		document.getElementById("CNS_wrapper").style.display="block";
 	}
 	if (assistant=="EZ") {
@@ -435,7 +439,7 @@ function extRetrieveCart(cmd,nxt) {
 	if (typeof(cmd)=='string') {/* alert(cmd); */params='?'+cmd;}
 	/* http://www.w3schools.com/json/json_http.asp */
 	var xmlhttp = new XMLHttpRequest();
-	var url = "ext/extendCart.php"+params;
+	var url = "../ext/extendCart.php"+params;
 	var thumbnail='';
 	cartText="";
 	var email_link='mailto:?subject=Parts List for your review'; /* window.open('mailto:test@example.com?subject=subject&body=body'); */

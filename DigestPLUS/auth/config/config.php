@@ -34,7 +34,7 @@ define("DB_PASS", "ace31415");
  * COOKIE_SECRET_KEY: Put a random value here to make your app more secure. When changed, all cookies are reset.
  */
 define("COOKIE_RUNTIME", 1209600);
-define("COOKIE_DOMAIN", "cnst.concepts.local");
+define("COOKIE_DOMAIN", "");
 define("COOKIE_SECRET_KEY", "1gp@TMPS{+$78sfpMJFe-92s");
 
 /**

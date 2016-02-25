@@ -1,4 +1,11 @@
-<div style="font-size:16pt;">navigation tabs where needed</div>
+
+<div class="extBtnGrp">
+	<div class="extBtn" onclick="clickTabIndex()" id="extTabIndex">Index</div>
+	<div class="extBtn" onclick="clickTabWizard()" id="extTabWizard">Selection&#160;Assistant<i class="fa fa-user iconWiz"></i></div>
+</div>
+<div class="CNS_wrapper" id="CNS_wrapper"></div>
+
+<div class="extBtnSpacer"></div>
 <div class="scroller">
 	<ul xmlns:puckdita="http://www.titaniasoftware.com/namespace/puck-saxfilter-dita" id="toc">
    <li data-refid="_17701002_66113" class="topicref chapter brand:sd tocentry"><span class="topichead">QO™ Miniature Circuit Breakers</span><ul>

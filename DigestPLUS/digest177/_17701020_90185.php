@@ -2275,6 +2275,6 @@ window.publicationName = "Digest 177";
 } /* ends primary content for logged in users */
 else {
 	/* alternate content for non-logged in users */
-    include("auth/views/not_logged_in.php");
+    include("_ext_not_logged_in.php");
 }
 ?>

@@ -17,7 +17,7 @@
 	<label for="user_password_repeat"><?php echo WORDING_REGISTRATION_PASSWORD_REPEAT; ?></label>
 	<input id="user_password_repeat" type="password" name="user_password_repeat" pattern=".{6,}" required autocomplete="off" />
 
-	<img src="tools/showCaptcha.php" alt="captcha" />
+	<img src="auth/tools/showCaptcha.php" alt="captcha" />
 
 	<label><?php echo WORDING_REGISTRATION_CAPTCHA; ?></label>
 	<input type="text" name="captcha" required />
