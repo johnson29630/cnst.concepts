@@ -154,6 +154,7 @@ function clickTabIndex(){
 	console.log("clickTabIndex initiated")
 	document.getElementById("extTabIndex").className="extBtn extBtnSelect";
 	document.getElementById("extTabWizard").className="extBtn";
+	document.getElementById("extSectionIndex").style.display="block";
 	document.getElementById("CNS_wrapper").style.display="none";
 }
 function clickTabWizard(){
@@ -180,12 +181,17 @@ function clickTabWizard(){
 	}
 	document.getElementById("extTabIndex").className="extBtn";
 	document.getElementById("extTabWizard").className="extBtn extBtnSelect";
-	document.getElementById("CNS_wrapper").style.top="88px";
-	document.getElementById("CNS_wrapper").style.left="0px";
-	document.getElementById("CNS_wrapper").style.width="360px"; /* 358 fits index area */
-	document.getElementById("CNS_wrapper").style.height="85%";
+
+	document.getElementById("extSectionIndex").style.display="none";
+	document.getElementById("CNS_wrapper").style.display="block";
+
+
+	//document.getElementById("CNS_wrapper").style.top="88px";
+	//document.getElementById("CNS_wrapper").style.left="0px";
+	//document.getElementById("CNS_wrapper").style.width="360px"; /* 358 fits index area */
+	//document.getElementById("CNS_wrapper").style.height="85%";
 	if (assistant=="CNS") {
-		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod_id+"&app="+prod_ap+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\"></iframe>"; 
+		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod_id+"&app="+prod_ap+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\" class=\"CNS_iframe\"></iframe>"; 
 		document.getElementById("CNS_wrapper").style.display="block";
 	}
 	if (assistant=="CNST") {
@@ -194,8 +200,8 @@ function clickTabWizard(){
 	}
 	if (assistant=="EZ") {
 
-		document.getElementById("CNS_wrapper").style.left="-61px";
-		document.getElementById("CNS_wrapper").style.width="438px";
+		//document.getElementById("CNS_wrapper").style.left="-61px";
+		//document.getElementById("CNS_wrapper").style.width="438px";
 	
 //document.getElementById("CNS_wrapper").innerHTML="";
 		var results;

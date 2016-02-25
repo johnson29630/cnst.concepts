@@ -12,7 +12,7 @@ body {
 }
 div.extBtnGrp {
 	/* border:1px solid red; */
-	background-color:#dddddd;
+	/* background-color:#dddddd; */
 	margin-top:4px;
 	margin-right:-0px;
 	margin-bottom:-12px;
@@ -50,12 +50,15 @@ div.extEasyFrame {
 }
 div.CNS_wrapper {
  	background-color:#cccccc;
-	position:absolute;
+	/* position:absolute;
 	top:1px;
 	left:1px;
 	height:1px;
 	width:1px;
-	z-index: 9990;
+	z-index: 9990; */
+	width:360px;
+	height:95%;
+	padding:0px 0px 0px 0px;
 }
 .iconWiz {
 	color:#009530;

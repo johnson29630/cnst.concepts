@@ -3,10 +3,11 @@
 	<div class="extBtn" onclick="clickTabIndex()" id="extTabIndex">Index</div>
 	<div class="extBtn" onclick="clickTabWizard()" id="extTabWizard">Selection&#160;Assistant<i class="fa fa-user iconWiz"></i></div>
 </div>
-<div class="CNS_wrapper" id="CNS_wrapper"></div>
 
 <div class="extBtnSpacer"></div>
 <div class="scroller">
+<div class="CNS_wrapper" id="CNS_wrapper"  style="display: none;"></div>
+<div class="extSectionIndex" id="extSectionIndex" style="display: block;">
 	<ul xmlns:puckdita="http://www.titaniasoftware.com/namespace/puck-saxfilter-dita" id="toc">
    <li data-refid="_17701002_66113" class="topicref chapter brand:sd tocentry"><span class="topichead">QO™ Miniature Circuit Breakers</span><ul>
          <li data-refid="_17701002_64045" class="topicref tocentry"><span class="topichead">QO Plug-On Circuit Breakers</span><ul>
@@ -193,4 +194,5 @@
       </ul>
    </li>
 </ul>
+</div>
 </div>
