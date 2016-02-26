@@ -458,7 +458,8 @@ function extRetrieveCart(cmd,nxt) {
 		    //document.getElementById("extCartMaterialList").innerHTML = JSON.stringify(myCart,null,' ');
 		    if (myCart.material.length>0) {
 		    	document.getElementById("extCartMaterialList").innerHTML +='<div class="extCartBtn" onclick="extRetrieveCart(\'cmd=empty\')">Empty Cart</div>';
-		    	for (itm of myCart.material) {
+				for (var i=0; i < myCart.material.length; i++) {
+					var itm=myCart.material[i];
 		    		if (itm[3]=='') thumbnail="";
 		    		else thumbnail='<img class="extCartImg60x40" src="'+itm[3]+'"/>';
     				document.getElementById("extCartMaterialList").innerHTML+='<div class="cnsx_cnum">'+thumbnail+'<div class="cnsx_qty">'+itm[0]+'</div>'+'<span class="cnsx_pname">'+itm[1]+'</span>'+'<div class="cnsx_desc">'+itm[2]+'</div></div>';
