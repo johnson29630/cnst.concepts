@@ -244,7 +244,8 @@ window.publicationName = "Digest 177";
                      </tbody>
                   </table>
                </div>
-               <p class="p" data-xtrc="p:3" lang="English_en"><a href="http://www.bit.ly/20gYNmc" class="xref" target="_blank">Product Selector</a></p><a name="_17701005_20820" class="xmlId"></a><div class="table data" data-srcid="_17701005_20820" data-xtrc="table:2" lang="English_en">
+               <p class="extSelectOPS"><a href="http://www.ops-ecat.schneider-electric.com/ecatalogue/browse.do?cat_id=BU_ED_7249_L3_Z018&conf=US&el_typ=node&nod_id=0000000002&s_val=D_LOAD_CENTER_TYPE::FIXED_MAINS_LUGS&s_val=D_NETWORK_NUMBER_OF_PHASES::1_PHASE&scp_id=Z018&s_val=A_NEMA_DEGREE_OF_PROTECTION::NEMA_1_INDOOR" target="_blank">Product Selector</a></p>
+               <!-- <p class="p" data-xtrc="p:3" lang="English_en"><a href="http://www.bit.ly/20gYNmc" class="xref" target="_blank">Product Selector</a></p> --><a name="_17701005_20820" class="xmlId"></a><div class="table data" data-srcid="_17701005_20820" data-xtrc="table:2" lang="English_en">
                   <h4 class="title" data-xtrc="title:2" lang="English_en">Main Lugs (Accepts Only QO Plug-On Circuit Breakers)</h4>
                   <table style="border-collapse: collapse; width: 100%; ">
                      <colgroup>

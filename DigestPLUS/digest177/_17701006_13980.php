@@ -229,6 +229,7 @@ window.publicationName = "Digest 177";
                Breaker
             </h3>
             <div class="body conbody" data-xtrc="conbody:1" lang="English_en"><a name="_17701006_84231" class="xmlId"></a><div class="table data" data-srcid="_17701006_84231" data-xtrc="table:1" lang="English_en">
+               <p class="extSelectOPS"><a href="http://www.ops-ecat.schneider-electric.com/ecatalogue/browse.do?cat_id=BU_ED_7249_L3_Z018&conf=US&el_typ=node&nod_id=0000000002&s_val=D_NETWORK_NUMBER_OF_PHASES%3A%3A1_PHASE&s_val=A_NEMA_DEGREE_OF_PROTECTION%3A%3ANEMA_1_INDOOR&scp_id=Z018&s_val=D_LOAD_CENTER_TYPE%3A%3ACONVERTIBLE_MAINS_BREAKER" target="_blank">Product Selector</a></p>
                   <h4 class="title" data-xtrc="title:2" lang="English_en">Main Circuit Breaker (Accepts Only QO Plug-On Circuit Breakers.) </h4>
                   <table style="border-collapse: collapse; width: 100%; ">
                      <colgroup>
