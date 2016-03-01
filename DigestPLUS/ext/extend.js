@@ -172,13 +172,22 @@ function clickTabWizard(){
 			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
 
 
-		case "_17701005_54243":assistant="CNS";prod_id="D01A";prod_ap="Indoor 1Ph3W Main Lugs";break;
-		case "_17701006_13980":assistant="CNST";prod_id="E2.0000";prod_ap="1Ph3W 120/240 Indoor";break;
+		case "_17701005_54243":assistant="CNST";prod="E2.D01A";subset="PS_2";break;
+		case "_17701006_13980":assistant="CNST";prod="E2.D01A";subset="PS_1";break;
 		case "_17701027_54243":assistant="CNS";prod_id="D01A";prod_ap="QO Plug-on Neutral CAFI Load Center";break;
 		case "_17701007_44298":assistant="CNS";prod_id="D01A";prod_ap="Rainproof 1Ph3W Main Lugs and Main Breaker";break;
 
 
-
+/*
+Indoor 3Ph4W and 3Ph3W Main Lugs and Main Breaker
+Rainproof 3Ph4W and 3Ph3W Main Lugs and Main Breaker
+1Ph3W Backup Power Solutions
+1Ph2W Special Applications
+1Ph3W Value Packs and Riser Panels
+QO Riser Panels
+Homeline Indoor 1Ph3W Main Lugs and Main Breaker
+Homeline Rainproof 1Ph3W Main Lugs and Main Breaker
+*/
 
 
 		case "_17701015_58738":assistant="CNST";prod_id="E2.0000";prod_ap="1Ph3W 120/240 Indoor";
@@ -208,7 +217,7 @@ function clickTabWizard(){
 		document.getElementById("CNS_wrapper").style.display="block";
 	}
 	if (assistant=="CNST") {
-		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod_id+"&app="+prod_ap+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\"></iframe>"; 
+		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod+"&subset="+subset+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\"></iframe>"; 
 		document.getElementById("CNS_wrapper").style.display="block";
 	}
 	if (assistant=="EZ") {
