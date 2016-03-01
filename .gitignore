@@ -1,5 +1,8 @@
 @temp
 
+#freefilesync database
+sync.ffs_db
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

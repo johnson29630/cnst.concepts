@@ -53,6 +53,7 @@ DigestPLUS Concept
 <link rel="stylesheet" href="ext/extend.css"></link>
 </head>
 <body>
+<!-- d+ext add help wrapper --><div class="helpWrapper" id="helpWrapper"></div>
 <div class="container">
 <div class="header"><div class="row">
 <div class="col-xs-6 col-sm-3 col-md-3">
@@ -3019,7 +3020,9 @@ Universal Enclosures
 <div class="container-fluid">
 <img alt="Digest 177 Sec. 1: Nov. 2015 - QO &amp; Homeline MCBs, load centers, CSEDs, and Servicepak power outlets" class="book-image img-responsive pull-left" src="./index_files/Section_1_Load_Centers-69a3812a61fa01b9bb9de5a8b612cba8.png">
 <div class="book-content">
-<h3 class="book-title"> Load Centers</h3>
+<h3 class="book-title"> Load Centers
+<span class="book-related extGuideBtn" onclick="prodGuide(this,event,'43861');">Guide</span>
+</h3>
 <p class="book-description">Digest 177 Sec. 1: Nov. 2015 - QO &amp; Homeline MCBs, load centers, CSEDs, and Servicepak power outlets
 </p>
 <!-- d+ext this block replaced for concept
