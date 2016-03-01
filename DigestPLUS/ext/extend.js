@@ -172,10 +172,13 @@ function clickTabWizard(){
 			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
 
 
-		case "_17701005_54243":assistant="CNS";prod_id="D01A";prod_ap="Indoor 1Ph3W Main Lugs";
-			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
-		case "_17701006_13980":assistant="CNST";prod_id="E2.0000";prod_ap="1Ph3W 120/240 Indoor";
-			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
+		case "_17701005_54243":assistant="CNS";prod_id="D01A";prod_ap="Indoor 1Ph3W Main Lugs";break;
+		case "_17701006_13980":assistant="CNST";prod_id="E2.0000";prod_ap="1Ph3W 120/240 Indoor";break;
+		case "_17701027_54243":assistant="CNS";prod_id="D01A";prod_ap="QO Plug-on Neutral CAFI Load Center";break;
+		case "_17701007_44298":assistant="CNS";prod_id="D01A";prod_ap="Rainproof 1Ph3W Main Lugs and Main Breaker";break;
+
+
+
 
 
 		case "_17701015_58738":assistant="CNST";prod_id="E2.0000";prod_ap="1Ph3W 120/240 Indoor";
