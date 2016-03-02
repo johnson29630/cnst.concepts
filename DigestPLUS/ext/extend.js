@@ -1,6 +1,6 @@
 
 /* digest section index links with assistants  window.refId = "xxxx"; */
-var cns=['x_17701005_54243','_17701006_13980','_17701002_64045'];
+var cns=['x_17701005_54243','x_17701006_13980','x_17701002_64045'];
 cns=cns.concat(['xGeneralDutyUpTo100KAShortCircuitCur-80671D9E']);
 cns=cns.concat(['xEnergyEfficientSinglePhaseAndSingle-70EE2DE3']);
 cns=cns.concat(['x_17723004_77624']);
@@ -130,6 +130,7 @@ function ext_onload() {
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244856/") els[i].setAttribute("href",u2+"17728_main(plus)(bookmap)_0000064454.html"); /* Section 28: Universal Enclosures */
 	}	
 
+
 	clickTabWizard();
 	
 	/* retreive cart */
@@ -169,8 +170,26 @@ function clickTabWizard(){
 			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
 		case "x_17701006_13980":assistant="CNS";prod_id="S0018";prod_ap="1Ph3W 120/240 Indoor";
 			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
-		case "_17701006_13980":assistant="CNST";prod_id="E2.0000";prod_ap="1Ph3W 120/240 Indoor";
-			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
+
+
+		case "_17701005_54243":assistant="CNST";prod="E2.D01A";subset="PS_2";break;
+		case "_17701006_13980":assistant="CNST";prod="E2.D01A";subset="PS_1";break;
+		case "_17701027_54243":assistant="CNS";prod_id="D01A";prod_ap="QO Plug-on Neutral CAFI Load Center";break;
+		case "_17701007_44298":assistant="CNS";prod_id="D01A";prod_ap="Rainproof 1Ph3W Main Lugs and Main Breaker";break;
+
+
+/*
+Indoor 3Ph4W and 3Ph3W Main Lugs and Main Breaker
+Rainproof 3Ph4W and 3Ph3W Main Lugs and Main Breaker
+1Ph3W Backup Power Solutions
+1Ph2W Special Applications
+1Ph3W Value Packs and Riser Panels
+QO Riser Panels
+Homeline Indoor 1Ph3W Main Lugs and Main Breaker
+Homeline Rainproof 1Ph3W Main Lugs and Main Breaker
+*/
+
+
 		case "_17701015_58738":assistant="CNST";prod_id="E2.0000";prod_ap="1Ph3W 120/240 Indoor";
 			nextStep="Select Circuit Breakers";nextLink="_17701002_64045.html#Plug-OnCircuitBreakers-5FF20DF8";break;
 		case "x_17701002_64045":assistant="CNS";prod_id="SA518";prod_ap="1Ph3W 120/240 Indoor";break;
@@ -187,17 +206,18 @@ function clickTabWizard(){
 	document.getElementById("extSectionIndex").style.display="none";
 	document.getElementById("CNS_wrapper").style.display="block";
 
+	/* todo: clean up visibility logic/sequence */
 
 	//document.getElementById("CNS_wrapper").style.top="88px";
 	//document.getElementById("CNS_wrapper").style.left="0px";
 	//document.getElementById("CNS_wrapper").style.width="360px"; /* 358 fits index area */
 	//document.getElementById("CNS_wrapper").style.height="85%";
 	if (assistant=="CNS") {
-		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod_id+"&app="+prod_ap+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\" class=\"CNS_iframe\"></iframe>"; 
+		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod_id+"&app="+prod_ap+"&apiKey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\" class=\"CNS_iframe\"></iframe>"; 
 		document.getElementById("CNS_wrapper").style.display="block";
 	}
 	if (assistant=="CNST") {
-		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod_id+"&app="+prod_ap+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\"></iframe>"; 
+		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod+"&subset="+subset+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\"></iframe>"; 
 		document.getElementById("CNS_wrapper").style.display="block";
 	}
 	if (assistant=="EZ") {
@@ -236,6 +256,13 @@ function clickTabWizard(){
 //document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"//schneider-electric.com\" width=\"100%\" height=\"100%\"></iframe>"; 
 
 		//document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"../CNS/CNS.php?prod="+prod_id+"&app="+prod_ap+"&apikey=8831a6000d584a6034d142d63eeeda93\" width=\"100%\" height=\"100%\"></iframe>"; 
+	}
+	if (assistant=="") {
+		/* no assistant available */
+		document.getElementById("CNS_wrapper").style.display="none";
+		document.getElementById("extSectionIndex").style.display="block";
+		document.getElementById("extTabIndex").className="extBtn extBtnSelect";
+		document.getElementById("extTabWizard").className="extBtn extBtnDisabled";
 	}
 }
 
