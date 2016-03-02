@@ -1,7 +1,7 @@
 
 <div class="extBtnGrp">
-	<div class="extBtn" onclick="clickTabIndex()" id="extTabIndex">Index</div>
-	<div class="extBtn" onclick="clickTabWizard()" id="extTabWizard">Selection&#160;Assistant<i class="fa fa-user iconWiz"></i></div>
+	<div class="extBtn extBtnSelect" onclick="clickTabIndex()" id="extTabIndex">Index</div>
+	<div class="extBtn extBtnDisabled" onclick="clickTabWizard()" id="extTabWizard">Selection&#160;Assistant<i class="fa fa-user iconWiz"></i></div>
 </div>
 
 <div class="extBtnSpacer"></div>

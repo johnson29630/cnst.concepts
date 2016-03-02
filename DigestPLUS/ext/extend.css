@@ -213,3 +213,10 @@ div.CNS_wrapper {
 .extNavMenu {
 	margin:0 -10px 4px -10px;padding-left:10px;background-color:#ddd;color:#222;
 }
+p.extSelectOPS a {
+	border:1px solid #009530;
+	padding:2px;
+	font-size:12px;
+	font-weight:bold;
+	border-radius:4px;
+}
