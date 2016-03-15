@@ -50,6 +50,7 @@ DigestPLUS Concept
 
 <!-- d+ext additional extension resources -->
 <script src="ext/extend.js"></script>
+<?php echo('<script>var listuid="'.$login->getUsername().'";</script>'."\n") ?>
 <link rel="stylesheet" href="ext/extend.css"></link>
 </head>
 <body>
@@ -161,18 +162,20 @@ Digest
 <a href="./index_files/index.htm"><img alt="main digest" src="./index_files/digest-icon-white-book-7445669f7af5c584d5d093231ac30681.png">
 Digest
 </a></li>
-<li class="nav-supplemental_digest">
-<a href="http://www.digestplus-us.schneider-electric.com/supplemental_digest"><img alt="supplemental digest" src="./index_files/digest-icon-white-book-7445669f7af5c584d5d093231ac30681.png">
+<!-- d+ext disabling this class enables '_blank' targets -->
+<li class="xnav-supplemental_digest"> 
+<a href="http://www.digestplus-us.schneider-electric.com/supplemental_digest" target="_blank"><img alt="supplemental digest" src="./index_files/digest-icon-white-book-7445669f7af5c584d5d093231ac30681.png">
 Supplemental Digest
 </a></li>
 <li class="nav-additional_product_info">
-<a href="http://www.digestplus-us.schneider-electric.com/additional_product_infos"><img alt="additional product information" src="./index_files/digest-icon-white-book-open-65cd27af9e8ac5e27a2580c2dc110e75.png">
+<a href="http://www.digestplus-us.schneider-electric.com/additional_product_infos" target="_blank"><img alt="additional product information" src="./index_files/digest-icon-white-book-open-65cd27af9e8ac5e27a2580c2dc110e75.png">
 Additional Product Info
 </a></li>
 <li class="nav-tools">
-<a href="http://www.digestplus-us.schneider-electric.com/tools"><img alt="tools" src="./index_files/digest-icon-white-tools-25948d2db69681875cfe3a302a1c7cf4.png">
+<a href="http://www.digestplus-us.schneider-electric.com/tools" target="_blank"><img alt="tools" src="./index_files/digest-icon-white-tools-25948d2db69681875cfe3a302a1c7cf4.png">
 Tools
 </a></li>
+<li><div style="margin-left:25px;margin-top:15px;background-color:#000;color:#fff"><span class="extDocTitleAddBtn" onclick="location.href='?logout';">concept logout <i class="fa fa-stop-circle-o"></i></span></div></li>
 </ul>
 </nav>
 
@@ -3067,7 +3070,7 @@ QO Load Centers
 <br/><a href="digest177/_17701013_72833.php">Load Center Accessories</a>
 <small>
 <br/>
-<br/><a href="digest177/17701_main(plus)(bookmap)_0000056628.php">Complete Load Center index</a>
+<br/><a href="digest177/17701_main+(bookmap)_0000056628.php">Complete Load Center index</a>
 </small>
 </p>
 </div><!-- d+ext inserted load center content links end -->

@@ -20,7 +20,6 @@ require_once('../auth/translations/en.php');
 require_once('../auth/libraries/PHPMailer.php');
 require_once('../auth/classes/Login.php');
 $login = new Login();
-
 if ($login->isUserLoggedIn() == true) {
 /* primary content for logged in users follows */ ?>
 <!DOCTYPE html>
@@ -84,13 +83,12 @@ window.publicationName = "Digest 177";
 
 <!-- d+ext extensions -->
 <script src="../ext/extend.js"></script>
+<?php echo('<script>var listuid="'.$login->getUsername().'";</script>'."\n") ?>
 <link rel="stylesheet" href="../ext/extend.css"></link>
 </head>
 
 
 <body class="readerPage" data-pageId=fe4d3c4f-e9e5-49cb-a7aa-637e6fb3bec4>
-
-
 
 <!-- BEGIN HEADER -->
 <header class="navbar navbar-default" id="harp-header-bar" role="navigation">

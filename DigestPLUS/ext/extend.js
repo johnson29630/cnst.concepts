@@ -20,7 +20,7 @@ var nextGoTo=false;
 var cartText="";
 var tempTopicView="";
 var tempTopicViewUrl="";
-(function(){null==window.AP&&(window.AP={}),AP.EasySelector=function(){function a(a){var b,c;for(b in a)c=a[b],this[b]=c;this.initialize()}return a.prototype.service={protocol:"https",host:"dry-refuge-2785.herokuapp.com",apiKey:"b2694f2382a7a97ce2d39b8f9d085e67",version:null},a.prototype.mockService=!0,a.prototype.productCode=null,a.prototype.selector=null,a.prototype.template='<iframe src="{{ iframeUrl }}" width="100%" height="100%" frameborder="0"></iframe>',a.prototype.initialize=function(){return this.validate(),$(window).on("message",function(a){return function(){return a.onMessage.apply(a,arguments)}}(this))},a.prototype.onMessage=function(a){var b;return b=a.originalEvent.data,console.log("datadatadata"),console.log(b),this.handleEvent(b)},a.prototype.validate=function(){if(!this.service.apiKey)throw new AP.EasySelectorError("Missing `apiKey` attribute");if(!this.productCode)throw new AP.EasySelectorError("Missing `productCode` attribute")},a.prototype.handleEvent=function(a){switch(a.fn){case"AddToProject":return this.handleComplete(JSON.parse(a.data).final_parts);case"CloseEasySelector":return this.handleClose()}},a.prototype.iframeUrl=function(){return this.mockService?"iframe.html?productCode="+this.productCode+"&apiKey="+this.service.apiKey:(this.service.protocol&&this.service.host?""+this.service.protocol+"://"+this.service.host+"/":"")+("product-configurator/"+this.productCode+"?apiKey="+this.service.apiKey)+(this.service.version?"&version="+this.service.version:"")},a.prototype.toHtml=function(){return this.template.replace("{{ iframeUrl }}",this.iframeUrl())},a.prototype.render=function(){var a;if(!this.selector)throw new AP.EasySelectorError("Missing `selector` attribute");if(!$(this.selector).size())throw new AP.EasySelectorError("Element does not exist: `"+this.selector+"`");return a=this.toHtml(),$(this.selector).html(a)},a.prototype.handleComplete=function(a){var b,c;return c=function(){var c,d,e;for(e=[],c=0,d=a.length;d>c;c++)b=a[c],e.push({catalogNo:b.part_number,designation:b.type,quantity:b.quantity});return e}(),this.onComplete(a,c)},a.prototype.handleClose=function(){return this.onClose(),$(".easy-selector-modal").modal("hide")},a.prototype.onComplete=function(){},a.prototype.onClose=function(){},a}()}).call(this),function(){var a={}.hasOwnProperty,b=function(b,c){function d(){this.constructor=b}for(var e in c)a.call(c,e)&&(b[e]=c[e]);return d.prototype=c.prototype,b.prototype=new d,b.__super__=c.prototype,b};null==window.AP&&(window.AP={}),AP.EasySelectorError=function(a){function c(a){var b;this.message=a,b=c.__super__.constructor.apply(this,arguments),this.name="EasySelectorError"}return b(c,a),c}(Error)}.call(this);
+/* (function(){null==window.AP&&(window.AP={}),AP.EasySelector=function(){function a(a){var b,c;for(b in a)c=a[b],this[b]=c;this.initialize()}return a.prototype.service={protocol:"https",host:"dry-refuge-2785.herokuapp.com",apiKey:"b2694f2382a7a97ce2d39b8f9d085e67",version:null},a.prototype.mockService=!0,a.prototype.productCode=null,a.prototype.selector=null,a.prototype.template='<iframe src="{{ iframeUrl }}" width="100%" height="100%" frameborder="0"></iframe>',a.prototype.initialize=function(){return this.validate(),$(window).on("message",function(a){return function(){return a.onMessage.apply(a,arguments)}}(this))},a.prototype.onMessage=function(a){var b;return b=a.originalEvent.data,console.log("datadatadata"),console.log(b),this.handleEvent(b)},a.prototype.validate=function(){if(!this.service.apiKey)throw new AP.EasySelectorError("Missing `apiKey` attribute");if(!this.productCode)throw new AP.EasySelectorError("Missing `productCode` attribute")},a.prototype.handleEvent=function(a){switch(a.fn){case"AddToProject":return this.handleComplete(JSON.parse(a.data).final_parts);case"CloseEasySelector":return this.handleClose()}},a.prototype.iframeUrl=function(){return this.mockService?"iframe.html?productCode="+this.productCode+"&apiKey="+this.service.apiKey:(this.service.protocol&&this.service.host?""+this.service.protocol+"://"+this.service.host+"/":"")+("product-configurator/"+this.productCode+"?apiKey="+this.service.apiKey)+(this.service.version?"&version="+this.service.version:"")},a.prototype.toHtml=function(){return this.template.replace("{{ iframeUrl }}",this.iframeUrl())},a.prototype.render=function(){var a;if(!this.selector)throw new AP.EasySelectorError("Missing `selector` attribute");if(!$(this.selector).size())throw new AP.EasySelectorError("Element does not exist: `"+this.selector+"`");return a=this.toHtml(),$(this.selector).html(a)},a.prototype.handleComplete=function(a){var b,c;return c=function(){var c,d,e;for(e=[],c=0,d=a.length;d>c;c++)b=a[c],e.push({catalogNo:b.part_number,designation:b.type,quantity:b.quantity});return e}(),this.onComplete(a,c)},a.prototype.handleClose=function(){return this.onClose(),$(".easy-selector-modal").modal("hide")},a.prototype.onComplete=function(){},a.prototype.onClose=function(){},a}()}).call(this),function(){var a={}.hasOwnProperty,b=function(b,c){function d(){this.constructor=b}for(var e in c)a.call(c,e)&&(b[e]=c[e]);return d.prototype=c.prototype,b.prototype=new d,b.__super__=c.prototype,b};null==window.AP&&(window.AP={}),AP.EasySelectorError=function(a){function c(a){var b;this.message=a,b=c.__super__.constructor.apply(this,arguments),this.name="EasySelectorError"}return b(c,a),c}(Error)}.call(this); */
 
 window.publicationLandingPage = "digest177.html";
 
@@ -95,39 +95,51 @@ function ext_onload() {
 	for (i=0;i<els.length;i++) {
 		//els[i].innerHTML=els[i].getAttribute("href");
 		//if (els[i].getAttribute("href")=="http://www.digestplus-us.schneider-electric.com/") els[i].setAttribute("href","digest177.html");
-		if (els[i].innerHTML=="Digest 177") els[i].innerHTML=="";
 		
+		
+		if (els[i].innerHTML=='Supplemental Digest 177') els[i].innerHTML="";
+		
+		if (els[i].innerHTML=="Digest 177") els[i].innerHTML="";
+		
+		if (els[i].innerHTML=="DigestPLUS") {
+			els[i].setAttribute("href","../");
+			els[i].setAttribute("target","");
+		}
+
+
 		if (els[i].getAttribute("href")=="http://www.digestplus-us.schneider-electric.com/") els[i].setAttribute("target","");
 		if (els[i].getAttribute("href")=="http://www.digestplus-us.schneider-electric.com/") els[i].setAttribute("href","DigestPLUSindex.htm");
 
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a2447fa/") els[i].setAttribute("href",u2+"17701_main%28plus%29%28bookmap%29_0000056628.html");
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a2447fd/") els[i].setAttribute("href",u2+"17702_main%28plus%29%28bookmap%29_0000048841.html");
+
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a2447fa/") els[i].setAttribute("href",u2+"17701_main%2B%28bookmap%29_0000056628.php"); /* Section 1 */
+		
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a2447fd/") els[i].setAttribute("href",u2+"17702_main%28plus%29%28bookmap%29_0000048841.html"); /* Section 2 */
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244800/") els[i].setAttribute("href",u2+"17703_main(plus)(bookmap)_0000060130.html"); /* Section 3: Safety Switches */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244803/") els[i].setAttribute("href",u2+"17704_main(plus)(bookmap)_0000041932.html"); /* Section 4: Power Monitoring and Control */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244803/") els[i].setAttribute("href",u2+"17704_main(plus)(bookmap)_0000041932.html"); /* Section 4: Power Monitoring */
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244806/") els[i].setAttribute("href",u2+"17705_main(plus)(bookmap)_0000054913.html"); /* Section 5: Advanced Products */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244809/") els[i].setAttribute("href",u2+"17706_main(plus)(bookmap)_0000059343.html"); /* Section 6: Surge Protective Devices (SPDs) */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24480c/") els[i].setAttribute("href",u2+"17707_main(plus)(bookmap)_0000054602.html"); /* Section 7: Miniature and Molded Case Circuit Breakers */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24480f/") els[i].setAttribute("href",u2+"17708_main(plus)(bookmap)_0000055153.html"); /* Section 8: Operating Mechanisms and Disconnect Switches */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244809/") els[i].setAttribute("href",u2+"17706_main(plus)(bookmap)_0000059343.html"); /* Section 6: Surge Prot Dev(SPDs) */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24480c/") els[i].setAttribute("href",u2+"17707_main(plus)(bookmap)_0000054602.html"); /* Section 7: Circuit Breakers */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24480f/") els[i].setAttribute("href",u2+"17708_main(plus)(bookmap)_0000055153.html"); /* Section 8: Op Mech and Disc Sw */
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244812/") els[i].setAttribute("href",u2+"17709_main(plus)(bookmap)_0000061751.html"); /* Section 9: Panelboards */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244815/") els[i].setAttribute("href",u2+"17710_main(plus)(bookmap)_0000060965.html"); /* Section 10: Power Solutions Integrated Equipment */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244818/") els[i].setAttribute("href",u2+"17711_main(plus)(bookmap)_0000065704.html"); /* Section 11: Switchboards and Switchgear */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244815/") els[i].setAttribute("href",u2+"17710_main(plus)(bookmap)_0000060965.html"); /* Section 10: Integ Equipment */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244818/") els[i].setAttribute("href",u2+"17711_main(plus)(bookmap)_0000065704.html"); /* Section 11: Switchbrd & Swtchgr */
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24481b/") els[i].setAttribute("href",u2+"17712_main(plus)(bookmap)_0000056938.html"); /* Section 12: Busway */
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24481e/") els[i].setAttribute("href",u2+"17713_main(plus)(bookmap)_0000055871.html"); /* Section 13: Wire Management */
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244821/") els[i].setAttribute("href",u2+"17714_main(plus)(bookmap)_0000061044.html"); /* Section 14: Transformers */
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244824/") els[i].setAttribute("href",u2+"17715_main(plus)(bookmap)_0000056082.html"); /* Section 15: Medical Products */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244827/") els[i].setAttribute("href",u2+"17716_main(plus)(bookmap)_0000062583.html"); /* Section 16: NEMA and Definite Purpose Contactors and Starters */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24482a/") els[i].setAttribute("href",u2+"17717_main(plus)(bookmap)_0000055870.html"); /* Section 17: Motor Control Centers */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24482d/") els[i].setAttribute("href",u2+"17718_main(plus)(bookmap)_0000058904.html"); /* Section 18: Contactors and Starters-IEC */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244830/") els[i].setAttribute("href",u2+"17719_main(plus)(bookmap)_0000052086.html"); /* Section 19: Push Buttons and Operator Interface */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244833/") els[i].setAttribute("href",u2+"17720_main(plus)(bookmap)_0000064574.html"); /* Section 20: Electronic Sensors and Machine Cabling */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244827/") els[i].setAttribute("href",u2+"17716_main(plus)(bookmap)_0000062583.html"); /* Section 16: NEMA Contact & Strs */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24482a/") els[i].setAttribute("href",u2+"17717_main(plus)(bookmap)_0000055870.html"); /* Section 17: MCC */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24482d/") els[i].setAttribute("href",u2+"17718_main(plus)(bookmap)_0000058904.html"); /* Section 18: IEC Contact & Strs */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244830/") els[i].setAttribute("href",u2+"17719_main(plus)(bookmap)_0000052086.html"); /* Section 19: Push Buttons */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244833/") els[i].setAttribute("href",u2+"17720_main(plus)(bookmap)_0000064574.html"); /* Section 20: Electronic Sensors */
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244841/") els[i].setAttribute("href",u2+"17721_main(plus)(bookmap)_0000065094.html"); /* Section 21: Limit Switches */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244844/") els[i].setAttribute("href",u2+"17722_main(plus)(bookmap)_0000062893.html"); /* Section 22: Pressure, Vacuum, and Float Switches */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244844/") els[i].setAttribute("href",u2+"17722_main(plus)(bookmap)_0000062893.html"); /* Section 22: Press/Vac/Float Sw */
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244847/") els[i].setAttribute("href",u2+"17723_main(plus)(bookmap)_0000064354.html"); /* Section 23: Relays and Timers */
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24484a/") els[i].setAttribute("href",u2+"17724_main(plus)(bookmap)_0000063623.html"); /* Section 24: Terminal Blocks */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24484d/") els[i].setAttribute("href",u2+"17725_main(plus)(bookmap)_0000056022.html"); /* Section 25: Machine Safety Products */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244850/") els[i].setAttribute("href",u2+"17726_main(plus)(bookmap)_0000049666.html"); /* Section 26: AC Drives and Soft Starters */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a24484d/") els[i].setAttribute("href",u2+"17725_main(plus)(bookmap)_0000056022.html"); /* Section 25: Machine Safety */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244850/") els[i].setAttribute("href",u2+"17726_main(plus)(bookmap)_0000049666.html"); /* Section 26: Drives, Soft Start */
 		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244853/") els[i].setAttribute("href",u2+"17727_main(plus)(bookmap)_0000053412.html"); /* Section 27: Automation Products */
-		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244856/") els[i].setAttribute("href",u2+"17728_main(plus)(bookmap)_0000064454.html"); /* Section 28: Universal Enclosures */
+		if (els[i].getAttribute("href")==u1+"561d5f9ae4b0c5c41a244856/") els[i].setAttribute("href",u2+"17728_main(plus)(bookmap)_0000064454.html"); /* Section 28: UniversalEnclosures */
 	}	
 
 
@@ -137,6 +149,15 @@ function ext_onload() {
 	extRetrieveCart();
 
 	//alert('ext_onload()');
+
+	var extFunctionButtons='<div class="extDocTitleAdd"><span class="extDocTitleAddBtn" onclick="location.href=\'../?logout\';">concept logout <i class="fa fa-stop-circle-o"></i></span></div>';
+	var element =  document.getElementById('docTitle');
+	if (typeof(element) != 'undefined' && element != null)
+	{
+		document.getElementById("docTitle").getElementsByTagName("div").item(0).getElementsByTagName("div").item(0).getElementsByTagName("div").item(0).getElementsByTagName("h3").item(0).innerHTML+=extFunctionButtons;
+		document.getElementById("floatingDocTitle").getElementsByTagName("div").item(0).getElementsByTagName("div").item(0).getElementsByTagName("div").item(0).getElementsByTagName("h3").item(0).innerHTML+=extFunctionButtons;
+	}
+
 
 	console.log("ext_onload complete")
 }
@@ -200,12 +221,16 @@ Homeline Rainproof 1Ph3W Main Lugs and Main Breaker
 		case "x_17723004_77624":assistant="CNS";prod_id="SC233";prod_ap="Miniature Relay (3-12A, 2PDT,3PDT,4PDT)";break;
 		case "xXB6CompleteDevices-0569EFCD":assistant="CNS";prod_id="S9001";prod_ap="16mm XB6 Operators";break;
 	}
-	document.getElementById("extTabIndex").className="extBtn";
-	document.getElementById("extTabWizard").className="extBtn extBtnSelect";
+	
+	var element =  document.getElementById('extTabIndex');
+	if (typeof(element) != 'undefined' && element != null)
+	{
+		document.getElementById("extTabIndex").className="extBtn";
+		document.getElementById("extTabWizard").className="extBtn extBtnSelect";
 
-	document.getElementById("extSectionIndex").style.display="none";
-	document.getElementById("CNS_wrapper").style.display="block";
-
+		document.getElementById("extSectionIndex").style.display="none";
+		document.getElementById("CNS_wrapper").style.display="block";
+	}
 	/* todo: clean up visibility logic/sequence */
 
 	//document.getElementById("CNS_wrapper").style.top="88px";
@@ -213,11 +238,11 @@ Homeline Rainproof 1Ph3W Main Lugs and Main Breaker
 	//document.getElementById("CNS_wrapper").style.width="360px"; /* 358 fits index area */
 	//document.getElementById("CNS_wrapper").style.height="85%";
 	if (assistant=="CNS") {
-		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod_id+"&app="+prod_ap+"&apiKey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\" class=\"CNS_iframe\"></iframe>"; 
+		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"//quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod_id+"&app="+prod_ap+"&apiKey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\" class=\"CNS_iframe\"></iframe>"; 
 		document.getElementById("CNS_wrapper").style.display="block";
 	}
 	if (assistant=="CNST") {
-		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"https://quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod+"&subset="+subset+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\"></iframe>"; 
+		document.getElementById("CNS_wrapper").innerHTML="<iframe src=\"//quotefast.schneider-electric.com/QuoteFast/QFHelp/cnst.php?prod="+prod+"&subset="+subset+"&apikey=b2694f2382a7a97ce2d39b8f9d085e67&nextStep="+encodeURI(nextStep)+"\" width=\"100%\" height=\"100%\"></iframe>"; 
 		document.getElementById("CNS_wrapper").style.display="block";
 	}
 	if (assistant=="EZ") {
@@ -259,10 +284,14 @@ Homeline Rainproof 1Ph3W Main Lugs and Main Breaker
 	}
 	if (assistant=="") {
 		/* no assistant available */
+	var element =  document.getElementById('CNS_wrapper');
+	if (typeof(element) != 'undefined' && element != null)
+	{
 		document.getElementById("CNS_wrapper").style.display="none";
 		document.getElementById("extSectionIndex").style.display="block";
 		document.getElementById("extTabIndex").className="extBtn extBtnSelect";
 		document.getElementById("extTabWizard").className="extBtn extBtnDisabled";
+	}
 	}
 }
 
@@ -271,6 +300,7 @@ window.addEventListener("message", receiveMessage, false);
 function receiveMessage(event) {
 	var cnl=[];
 	var odata;
+	console.log("receiveMessage:" + JSON.stringify((event.data)));
 	//alert(JSON.stringify((event.data)));
 	//alert(JSON.stringify((event.data.fn)));
 	if (event.data.fn=="cnsAddToProject") {
@@ -295,6 +325,7 @@ function receiveMessage(event) {
 		odata=odata.final_parts
 		//alert(JSON.stringify((odata)));
 		//alert(JSON.stringify((odata.final_parts)));
+		console.log("receiveMessage="+event.data.fn+":" + JSON.stringify((odata)));
 		extAddToProjectEZ(odata);
 		for (i=0;i<odata.length;i++) {
 			//alert(event.data.data[i])
@@ -302,20 +333,50 @@ function receiveMessage(event) {
 		}
 		highlightCatNums(cln);
 	}
+	if (event.data.fn=="cnsAddToProject") {
+		cln=[];
+		odata=JSON.parse(event.data.data);
+		//odata=odata.final_parts
+		//alert(JSON.stringify((odata)));
+		//alert(JSON.stringify((odata.final_parts)));
+		console.log("receiveMessage="+event.data.fn+":" + JSON.stringify((odata)));
+		extAddToProjectEZ(odata);
+		for (i=0;i<odata.length;i++) {
+			//alert(odata[i].catalogNo)
+			//if (typeof(odata[i].catalogNo)=="String") {
+				cln[cln.length]=odata[i].catalogNo;
+			//}
+			//if (typeof(odata[i].part_number)=="String") {
+			//	cln[cln.length]=odata[i].part_number;
+			//}
+		}
+		highlightCatNums(cln);
+	}
 	if (event.data.fn=="cnsSolution") {
 		cln=[];
 		odata=JSON.parse(event.data.data);
+		console.log("receiveMessage="+event.data.fn+":" + JSON.stringify((odata)));
 		for (i=0;i<odata.length;i++) {
-			//alert(event.data.data[i])
-			//cln[cln.length]=odata[i].catalogNo;
-			if (typeof(odata[i].catalogNo)=="String") {
-				cln[cln.length]=odata[i].catalogNo;
-			}
-			if (typeof(odata[i].part_number)=="String") {
-				cln[cln.length]=odata[i].part_number;
-			}
+			//alert(JSON.stringify(odata[i]));
+			//console.log("receiveMessage="+event.data.fn+"#"+JSON.stringify((odata[i])));
+			//console.log("receiveMessage="+event.data.fn+"##"+((odata[i].catalogNo)));
+			//alert(odata[i].catalogNo)
+			cln[cln.length]=odata[i].catalogNo;
+			//if (typeof(odata[i].catalogNo)=="String") {
+			//	cln[cln.length]=odata[i].catalogNo;
+			//}
+			//if (typeof(odata[i].part_number)=="String") {
+			//	cln[cln.length]=odata[i].part_number;
+			//}
 		}
 		highlightCatNums(cln);
+	}
+	if (event.data.fn=="cnsProdSubset") {
+	//	cln=[];
+	//	odata=JSON.parse(event.data.data);
+		console.log("receiveMessage="+event.data.fn+":" + event.data.prod + "."+ event.data.subset);
+		if (event.data.prod + "."+ event.data.subset=="D01A.PS_2" & window.refId != "_17701005_54243") {location.href="_17701005_54243.php";}
+		if (event.data.prod + "."+ event.data.subset=="D01A.PS_1" & window.refId != "_17701006_13980") {location.href="_17701006_13980.php";}
 	}
 	if (event.data.fn=="cnsClose") {
 		//alert(JSON.stringify(event.data));
@@ -387,6 +448,7 @@ function showEZdata() {
 }
 
 function highlightCatNums(catnumlist) {
+	console.log("highlightCatNums:" + JSON.stringify((catnumlist)));
 	var catnum=document.getElementsByTagName("p")
 	var c="";
 	var looking=true
@@ -470,11 +532,12 @@ function extDrop(ev) {
 }
 
 function extRetrieveCart(cmd,nxt) {
-	var params='';
-	if (typeof(cmd)=='string') {/* alert(cmd); */params='?'+cmd;}
+	var params='?email='+listuid;
+	if (typeof(cmd)=='string') {/* alert(cmd); */params+='&'+cmd;}
 	/* http://www.w3schools.com/json/json_http.asp */
 	var xmlhttp = new XMLHttpRequest();
 	var url = "../ext/extendCart.php"+params;
+	console.log(url);
 	var thumbnail='';
 	cartText="";
 	var email_link='mailto:?subject=Parts List for your review'; /* window.open('mailto:test@example.com?subject=subject&body=body'); */
@@ -494,8 +557,9 @@ function extRetrieveCart(cmd,nxt) {
 				}
 				document.getElementById("extCartMaterialList").innerHTML +='<div class="extCartBtn" onclick="extCartToClipboard()" id="extCartBtnCopy">copy this to clipboard</div>';
 			}
+			cartText+=listuid+"\n";
 			cartText+="cartID:"+myCart.ndx+"\n";
-			document.getElementById("extCartMaterialList").innerHTML +='<div class="extCartMaterialFoot">CartID:'+myCart.ndx+'</div>';
+			document.getElementById("extCartMaterialList").innerHTML +='<div class="extCartMaterialFoot">'+'CartID:'+myCart.ndx+'</div>';
 			if (nextGoTo) {
 				setTimeout(function(){location.href=nextLink; }, 400);
 			}

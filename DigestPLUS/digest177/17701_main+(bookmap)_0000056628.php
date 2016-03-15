@@ -73,6 +73,7 @@ $(function() {
 
 <!-- d+ext extensions -->
 <script src="../ext/extend.js"></script>
+<?php echo('<script>var listuid="'.$login->getUsername().'";</script>'."\n") ?>
 <link rel="stylesheet" href="../ext/extend.css"></link>
 </head>
 

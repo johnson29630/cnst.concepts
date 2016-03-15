@@ -6,6 +6,14 @@
   header( "Pragma: no-cache" );
 /* ---------------------------------------------------------------------------- */
 
+/**
+* 
+* linked to user email authentication
+* 
+* note: accepts email attribute as paraleter, does not verify authentication (todo: address in future update)
+* 
+*/
+
   $datasource['type']='MySQL';
   $datasource['user']='ext_cart';
   $datasource['password']='ext_cart';
@@ -16,18 +24,20 @@
 	$link = mysqli_connect($datasource['server'], $datasource['user'], $datasource['password'],$datasource['database']);
 
 
-$request="";$reqp="";$reqv="";
+$request="";$reqp="";$reqv="";$uid="this_is_not_a_valid_email_address";
 if (isset($_GET['addtext'])) {$reqp="addtext";$reqv=$_GET[$reqp];$request=$reqp."=".$reqv;}
 if (isset($_GET['addurl'])) {$reqp="addurl";$reqv=$_GET[$reqp];$request=$reqp."=".$reqv;}
 if (isset($_GET['addlist'])) {$reqp="addlist";$reqv=$_GET[$reqp];$request=$reqp."=".$reqv;}
 if (isset($_GET['cmd'])) {$reqp="cmd";$reqv=$_GET[$reqp];$request=$reqp."=".$reqv;}
+if (isset($_GET['email'])) {$uid=$_GET['email'];}
 
-if (isset($_COOKIE["ext_cart"])) $ndx=$_COOKIE["ext_cart"]+0;else $ndx=0;
+/* if (isset($_COOKIE["ext_cart"])) $ndx=$_COOKIE["ext_cart"]+0;else $ndx=0; */
 
-	$q="select * from data_qcnfg.cart where ndx=".$ndx.";";
+	$q="select * from data_qcnfg.cart where user_id='".$uid."';";
 	$result = mysqli_query($link,$q);
 	if ($row = mysqli_fetch_array($result)) {
 		$mat=$row["material"];
+		$ndx=$row["ndx"];
 		}
 	else {
 		$ndx=0;
@@ -37,7 +47,7 @@ if (isset($_COOKIE["ext_cart"])) $ndx=$_COOKIE["ext_cart"]+0;else $ndx=0;
 
 if ($ndx==0) {
 	/* no valid cart identified, need to create one */
-	$q="insert into data_qcnfg.cart (`material`,`dtcreate`) values (concat('".newCartMat()."\n"."/* ',now(),' cart created */'),now());";
+	$q="insert into data_qcnfg.cart (`user_id`,`material`,`dtcreate`) values ('".$uid."',concat('".newCartMat()."\n"."/* ',now(),' cart created */'),now());";
 	mysqli_query($link,$q);
 	$q="select last_insert_id() as newid;";
 	$result=mysqli_query($link,$q);
@@ -46,11 +56,11 @@ if ($ndx==0) {
 		$mat=newCartMat();
 	}
 	mysqli_free_result($result);
-	setcookie("ext_cart",$ndx,time() + (365 * 24 * 60 * 60));
+	/* setcookie("ext_cart",$ndx,time() + (365 * 24 * 60 * 60)); */
 }
 
 
-if ($request!='') {
+if ($request!='' and $ndx>0) {
 	$q="update data_qcnfg.cart set material=concat(material,'\n/* ',now(),' ".$request." */') where ndx=".$ndx.";";
 	mysqli_query($link,$q);
 	if ($reqp=='addurl') {
@@ -110,10 +120,10 @@ if ($request!='') {
 				$mat.="\n1|".$row["catalog_nbr"].'|'.$row["desc"]."|".$row["url_img_60x40"];
 				$q2="update data_qcnfg.cart set material=concat(material,'\n1|".$row["catalog_nbr"]."|".$row["desc"]."|".$row["url_img_60x40"]."'), updates=updates+1 where ndx=".$ndx.";";
 			}
-			//else {
-			//	$mat.="\n1|".$newp.'|('.$newp.')|';
-			//	$q2="update data_qcnfg.cart set material=concat(material,'\n1|".$newp."|(".$newp.")|') where ndx=".$ndx.";";
-			//}
+			else {
+				$mat.="\n1|".$newp.'|('.$newp.')|';
+				$q2="update data_qcnfg.cart set material=concat(material,'\n1|".$newp."|(".$newp.")|') where ndx=".$ndx.";";
+			}
 			mysqli_free_result($result);
 			if ($q2!="") {
 				mysqli_query($link,$q2);
@@ -153,6 +163,7 @@ if ($request!='') {
 		}
 	}
 }
+
 
 $bom=explode("\n",$mat);
 
