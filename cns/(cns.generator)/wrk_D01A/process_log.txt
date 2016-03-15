@@ -1,32 +1,32 @@
-2016.03.15 07.10.55:input file "J:\@WTServer\WWW\cnst.concepts\cns\(cns.generator)\D01A Load Centers - Digest.xlsx"
-2016.03.15 07.10.55:spreadsheet conversion initiated
-2016.03.15 07.12.03:spreadsheet conversion complete
-2016.03.15 07.12.03:scan catalog numbers
-2016.03.15 07.12.04:generate config
-2016.03.15 07.12.04:generate config: options
-2016.03.15 07.12.04:feature:9999999999|n/a|1001||||
-2016.03.15 07.12.04:feature:9999999999|Lugs|1002||||
-2016.03.15 07.12.04:feature:9999999999|Circuit Breaker|1003||||
-2016.03.15 07.12.04:feature:9999999999|Generator Panels|1004||||
-2016.03.15 07.12.04:feature_values:
+2016.03.15 07.34.01:input file "J:\@WTServer\WWW\cnst.concepts\cns\(cns.generator)\D01A Load Centers - Digest.xlsx"
+2016.03.15 07.34.02:spreadsheet conversion initiated
+2016.03.15 07.34.38:spreadsheet conversion complete
+2016.03.15 07.34.39:scan catalog numbers
+2016.03.15 07.34.39:generate config
+2016.03.15 07.34.39:generate config: options
+2016.03.15 07.34.39:feature:9999999999|n/a|1001||||
+2016.03.15 07.34.39:feature:9999999999|Lugs|1002||||
+2016.03.15 07.34.39:feature:9999999999|Circuit Breaker|1003||||
+2016.03.15 07.34.39:feature:9999999999|Generator Panels|1004||||
+2016.03.15 07.34.39:feature_values:
 9999999999|n/a|1001||||
 9999999999|Lugs|1002||||
 9999999999|Circuit Breaker|1003||||
 9999999999|Generator Panels|1004||||
-2016.03.15 07.12.04:feature:9999999999|100A|1005||||
-2016.03.15 07.12.04:feature:9999999999|125A|1006||||
-2016.03.15 07.12.04:feature:9999999999|150A|1007||||
-2016.03.15 07.12.04:feature:9999999999|200A|1008||||
-2016.03.15 07.12.04:feature:9999999999|225A|1009||||
-2016.03.15 07.12.04:feature:9999999999|30A|1010||||
-2016.03.15 07.12.04:feature:9999999999|70A|1011||||
-2016.03.15 07.12.04:feature:9999999999|60A|1012||||
-2016.03.15 07.12.04:feature:9999999999|40A|1013||||
-2016.03.15 07.12.04:feature:9999999999|100/20A|1014||||
-2016.03.15 07.12.04:feature:9999999999|100/30A|1015||||
-2016.03.15 07.12.04:feature:9999999999|100/50A|1016||||
-2016.03.15 07.12.04:feature:9999999999|50A|1017||||
-2016.03.15 07.12.04:feature_values:
+2016.03.15 07.34.39:feature:9999999999|100A|1005||||
+2016.03.15 07.34.39:feature:9999999999|125A|1006||||
+2016.03.15 07.34.39:feature:9999999999|150A|1007||||
+2016.03.15 07.34.39:feature:9999999999|200A|1008||||
+2016.03.15 07.34.39:feature:9999999999|225A|1009||||
+2016.03.15 07.34.39:feature:9999999999|30A|1010||||
+2016.03.15 07.34.39:feature:9999999999|70A|1011||||
+2016.03.15 07.34.39:feature:9999999999|60A|1012||||
+2016.03.15 07.34.39:feature:9999999999|40A|1013||||
+2016.03.15 07.34.39:feature:9999999999|100/20A|1014||||
+2016.03.15 07.34.39:feature:9999999999|100/30A|1015||||
+2016.03.15 07.34.39:feature:9999999999|100/50A|1016||||
+2016.03.15 07.34.40:feature:9999999999|50A|1017||||
+2016.03.15 07.34.40:feature_values:
 9999999999|100A|1005||||
 9999999999|125A|1006||||
 9999999999|150A|1007||||
@@ -40,45 +40,45 @@
 9999999999|100/30A|1015||||
 9999999999|100/50A|1016||||
 9999999999|50A|1017||||
-2016.03.15 07.12.04:feature:9999999999|12 (12)|1018||||
-2016.03.15 07.12.04:feature:9999999999|16 (16)|1019||||
-2016.03.15 07.12.04:feature:9999999999|20 (20)|1020||||
-2016.03.15 07.12.05:feature:9999999999|24 (24)|1021||||
-2016.03.15 07.12.05:feature:9999999999|32 (32)|1022||||
-2016.03.15 07.12.05:feature:9999999999|20 (30)|1023||||
-2016.03.15 07.12.05:feature:9999999999|30 (30)|1024||||
-2016.03.15 07.12.05:feature:9999999999|20 (40)|1025||||
-2016.03.15 07.12.05:feature:9999999999|30 (40)|1026||||
-2016.03.15 07.12.05:feature:9999999999|40 (40)|1027||||
-2016.03.15 07.12.05:feature:9999999999|40 (60)|1028||||
-2016.03.15 07.12.05:feature:9999999999|42 (42)|1029||||
-2016.03.15 07.12.05:feature:9999999999|42 (52)|1030||||
-2016.03.15 07.12.05:feature:9999999999|6 (12)|1031||||
-2016.03.15 07.12.05:feature:9999999999|8 (12)|1032||||
-2016.03.15 07.12.05:feature:9999999999|8 (16)|1033||||
-2016.03.15 07.12.05:feature:9999999999|12 (24)|1034||||
-2016.03.15 07.12.05:feature:9999999999|16 (24)|1035||||
-2016.03.15 07.12.05:feature:9999999999|20 (24)|1036||||
-2016.03.15 07.12.05:feature:9999999999|2 (2)|1037||||
-2016.03.15 07.12.05:feature:9999999999|2 (4)|1038||||
-2016.03.15 07.12.05:feature:9999999999|54 (54)|1039||||
-2016.03.15 07.12.05:feature:9999999999|60 (60)|1040||||
-2016.03.15 07.12.05:feature:9999999999|4 (8)|1041||||
-2016.03.15 07.12.05:feature:9999999999|3 (3)|1042||||
-2016.03.15 07.12.05:feature:9999999999|18 (18)|1043||||
-2016.03.15 07.12.05:feature:9999999999|27 (27)|1044||||
-2016.03.15 07.12.05:feature:9999999999|38 (42)|1045||||
-2016.03.15 07.12.05:feature:9999999999|14 (28)|1046||||
-2016.03.15 07.12.05:feature:9999999999|3 (5)|1047||||
-2016.03.15 07.12.05:feature:9999999999|12 (20)|1048||||
-2016.03.15 07.12.06:feature:9999999999|30 (60)|1049||||
-2016.03.15 07.12.06:feature:9999999999|24 (48)|1050||||
-2016.03.15 07.12.06:feature:9999999999|40 (80)|1051||||
-2016.03.15 07.12.06:feature:9999999999|16 (32)|1052||||
-2016.03.15 07.12.06:feature:9999999999|42 (84)|1053||||
-2016.03.15 07.12.06:feature:9999999999|60 (120)|1054||||
-2016.03.15 07.12.06:feature:9999999999|24 (80)|1055||||
-2016.03.15 07.12.06:feature_values:
+2016.03.15 07.34.40:feature:9999999999|12 (12)|1018||||
+2016.03.15 07.34.40:feature:9999999999|16 (16)|1019||||
+2016.03.15 07.34.40:feature:9999999999|20 (20)|1020||||
+2016.03.15 07.34.40:feature:9999999999|24 (24)|1021||||
+2016.03.15 07.34.40:feature:9999999999|32 (32)|1022||||
+2016.03.15 07.34.40:feature:9999999999|20 (30)|1023||||
+2016.03.15 07.34.40:feature:9999999999|30 (30)|1024||||
+2016.03.15 07.34.40:feature:9999999999|20 (40)|1025||||
+2016.03.15 07.34.40:feature:9999999999|30 (40)|1026||||
+2016.03.15 07.34.40:feature:9999999999|40 (40)|1027||||
+2016.03.15 07.34.40:feature:9999999999|40 (60)|1028||||
+2016.03.15 07.34.40:feature:9999999999|42 (42)|1029||||
+2016.03.15 07.34.40:feature:9999999999|42 (52)|1030||||
+2016.03.15 07.34.40:feature:9999999999|6 (12)|1031||||
+2016.03.15 07.34.40:feature:9999999999|8 (12)|1032||||
+2016.03.15 07.34.40:feature:9999999999|8 (16)|1033||||
+2016.03.15 07.34.40:feature:9999999999|12 (24)|1034||||
+2016.03.15 07.34.40:feature:9999999999|16 (24)|1035||||
+2016.03.15 07.34.40:feature:9999999999|20 (24)|1036||||
+2016.03.15 07.34.40:feature:9999999999|2 (2)|1037||||
+2016.03.15 07.34.40:feature:9999999999|2 (4)|1038||||
+2016.03.15 07.34.40:feature:9999999999|54 (54)|1039||||
+2016.03.15 07.34.40:feature:9999999999|60 (60)|1040||||
+2016.03.15 07.34.40:feature:9999999999|4 (8)|1041||||
+2016.03.15 07.34.40:feature:9999999999|3 (3)|1042||||
+2016.03.15 07.34.40:feature:9999999999|18 (18)|1043||||
+2016.03.15 07.34.40:feature:9999999999|27 (27)|1044||||
+2016.03.15 07.34.41:feature:9999999999|38 (42)|1045||||
+2016.03.15 07.34.41:feature:9999999999|14 (28)|1046||||
+2016.03.15 07.34.41:feature:9999999999|3 (5)|1047||||
+2016.03.15 07.34.41:feature:9999999999|12 (20)|1048||||
+2016.03.15 07.34.41:feature:9999999999|30 (60)|1049||||
+2016.03.15 07.34.41:feature:9999999999|24 (48)|1050||||
+2016.03.15 07.34.41:feature:9999999999|40 (80)|1051||||
+2016.03.15 07.34.41:feature:9999999999|16 (32)|1052||||
+2016.03.15 07.34.41:feature:9999999999|42 (84)|1053||||
+2016.03.15 07.34.41:feature:9999999999|60 (120)|1054||||
+2016.03.15 07.34.41:feature:9999999999|24 (80)|1055||||
+2016.03.15 07.34.41:feature_values:
 9999999999|12 (12)|1018||||
 9999999999|16 (16)|1019||||
 9999999999|20 (20)|1020||||
@@ -117,50 +117,50 @@
 9999999999|42 (84)|1053||||
 9999999999|60 (120)|1054||||
 9999999999|24 (80)|1055||||
-2016.03.15 07.12.06:feature:9999999999|Flush|1056||||
-2016.03.15 07.12.06:feature:9999999999|Surface|1057||||
-2016.03.15 07.12.06:feature:9999999999|n/a|1058||||
-2016.03.15 07.12.06:feature:9999999999|Included|1059||||
-2016.03.15 07.12.06:feature_values:
+2016.03.15 07.34.41:feature:9999999999|Flush|1056||||
+2016.03.15 07.34.41:feature:9999999999|Surface|1057||||
+2016.03.15 07.34.41:feature:9999999999|n/a|1058||||
+2016.03.15 07.34.41:feature:9999999999|Included|1059||||
+2016.03.15 07.34.41:feature_values:
 9999999999|Flush|1056||||
 9999999999|Surface|1057||||
 9999999999|n/a|1058||||
 9999999999|Included|1059||||
-2016.03.15 07.12.06:feature:9999999999|Indoor|1060||||
-2016.03.15 07.12.06:feature:9999999999|Outdoor|1061||||
-2016.03.15 07.12.06:feature:9999999999|Rainproof|1062||||
-2016.03.15 07.12.06:feature:9999999999|Nema 3R|1063||||
-2016.03.15 07.12.06:feature_values:
+2016.03.15 07.34.41:feature:9999999999|Indoor|1060||||
+2016.03.15 07.34.41:feature:9999999999|Outdoor|1061||||
+2016.03.15 07.34.41:feature:9999999999|Rainproof|1062||||
+2016.03.15 07.34.41:feature:9999999999|Nema 3R|1063||||
+2016.03.15 07.34.41:feature_values:
 9999999999|Indoor|1060||||
 9999999999|Outdoor|1061||||
 9999999999|Rainproof|1062||||
 9999999999|Nema 3R|1063||||
-2016.03.15 07.12.06:generate config: product_subset
-2016.03.15 07.12.06:product_subset:101|Indoor 1Ph3W Main Lugs and Main Breaker|Indoor 1Ph3W Main Lugs and Main Breaker||||_17701005
-2016.03.15 07.12.06:product_subset:103|QO Plug-on Neutral CAFI Load Center|QO Plug-on Neutral CAFI Load Center||||_17701027
-2016.03.15 07.12.06:product_subset:106|Rainproof 1Ph3W Main Lugs and Main Breaker|Rainproof 1Ph3W Main Lugs and Main Breaker||||_17701007
-2016.03.15 07.12.06:product_subset:110|Indoor 3Ph4W and 3Ph3W Main Lugs and Main Breaker|Indoor 3Ph4W and 3Ph3W Main Lugs and Main Breaker||||_17701008
-2016.03.15 07.12.06:product_subset:115|Rainproof 3Ph4W and 3Ph3W Main Lugs and Main Breaker|Rainproof 3Ph4W and 3Ph3W Main Lugs and Main Breaker||||_17701008A
-2016.03.15 07.12.06:product_subset:121|1Ph3W Backup Power Solutions|1Ph3W Backup Power Solutions||||_17701009
-2016.03.15 07.12.06:product_subset:128|1Ph2W Special Applications|1Ph2W Special Applications||||_17701010
-2016.03.15 07.12.07:product_subset:136|1Ph3W Value Packs and Riser Panels|1Ph3W Value Packs and Riser Panels||||_17701011
-2016.03.15 07.12.07:product_subset:145|QO Riser Panels|QO Riser Panels||||_17701011A
-2016.03.15 07.12.07:product_subset:155|Homeline Indoor 1Ph3W Main Lugs and Main Breaker|Homeline Indoor 1Ph3W Main Lugs and Main Breaker||||_17701015
-2016.03.15 07.12.07:product_subset:166|Homeline Rainproof 1Ph3W Main Lugs and Main Breaker|Homeline Rainproof 1Ph3W Main Lugs and Main Breaker||||_17701015A
-2016.03.15 07.12.07:product_subset:
-101|Indoor 1Ph3W Main Lugs and Main Breaker|Indoor 1Ph3W Main Lugs and Main Breaker||||_17701005
-103|QO Plug-on Neutral CAFI Load Center|QO Plug-on Neutral CAFI Load Center||||_17701027
-106|Rainproof 1Ph3W Main Lugs and Main Breaker|Rainproof 1Ph3W Main Lugs and Main Breaker||||_17701007
+2016.03.15 07.34.41:generate config: product_subset
+2016.03.15 07.34.41:product_subset:101|Indoor 1Ph3W Main Lugs and Main Breaker|Indoor 1Ph3W Main Lugs and Main Breaker|Main Lugs (Accepts Only QO Plug-On Circuit Breakers)|||_17701005
+2016.03.15 07.34.42:product_subset:103|QO Plug-on Neutral CAFI Load Center|QO Plug-on Neutral CAFI Load Center|Main Circuit Breaker (Accepts Only QO Plug-On Circuit Breakers.)|||_17701027
+2016.03.15 07.34.42:product_subset:106|Rainproof 1Ph3W Main Lugs and Main Breaker|Rainproof 1Ph3W Main Lugs and Main Breaker|QO Plug-on Neutral CAFI Load Center (accepts QO Circuit Breakers only)|||_17701007
+2016.03.15 07.34.42:product_subset:110|Indoor 3Ph4W and 3Ph3W Main Lugs and Main Breaker|Indoor 3Ph4W and 3Ph3W Main Lugs and Main Breaker||||_17701008
+2016.03.15 07.34.42:product_subset:115|Rainproof 3Ph4W and 3Ph3W Main Lugs and Main Breaker|Rainproof 3Ph4W and 3Ph3W Main Lugs and Main Breaker||||_17701008A
+2016.03.15 07.34.42:product_subset:121|1Ph3W Backup Power Solutions|1Ph3W Backup Power Solutions||||_17701009
+2016.03.15 07.34.42:product_subset:128|1Ph2W Special Applications|1Ph2W Special Applications||||_17701010
+2016.03.15 07.34.42:product_subset:136|1Ph3W Value Packs and Riser Panels|1Ph3W Value Packs and Riser Panels|Value Packs Contains Complete Load Center (Box, Interior and Cover) with Selected Branch Circuit Breaker|||_17701011
+2016.03.15 07.34.42:product_subset:145|QO Riser Panels|QO Riser Panels||||_17701011A
+2016.03.15 07.34.42:product_subset:155|Homeline Indoor 1Ph3W Main Lugs and Main Breaker|Homeline Indoor 1Ph3W Main Lugs and Main Breaker||||_17701015
+2016.03.15 07.34.42:product_subset:166|Homeline Rainproof 1Ph3W Main Lugs and Main Breaker|Homeline Rainproof 1Ph3W Main Lugs and Main Breaker||||_17701015A
+2016.03.15 07.34.42:product_subset:
+101|Indoor 1Ph3W Main Lugs and Main Breaker|Indoor 1Ph3W Main Lugs and Main Breaker|Main Lugs (Accepts Only QO Plug-On Circuit Breakers)|||_17701005
+103|QO Plug-on Neutral CAFI Load Center|QO Plug-on Neutral CAFI Load Center|Main Circuit Breaker (Accepts Only QO Plug-On Circuit Breakers.)|||_17701027
+106|Rainproof 1Ph3W Main Lugs and Main Breaker|Rainproof 1Ph3W Main Lugs and Main Breaker|QO Plug-on Neutral CAFI Load Center (accepts QO Circuit Breakers only)|||_17701007
 110|Indoor 3Ph4W and 3Ph3W Main Lugs and Main Breaker|Indoor 3Ph4W and 3Ph3W Main Lugs and Main Breaker||||_17701008
 115|Rainproof 3Ph4W and 3Ph3W Main Lugs and Main Breaker|Rainproof 3Ph4W and 3Ph3W Main Lugs and Main Breaker||||_17701008A
 121|1Ph3W Backup Power Solutions|1Ph3W Backup Power Solutions||||_17701009
 128|1Ph2W Special Applications|1Ph2W Special Applications||||_17701010
-136|1Ph3W Value Packs and Riser Panels|1Ph3W Value Packs and Riser Panels||||_17701011
+136|1Ph3W Value Packs and Riser Panels|1Ph3W Value Packs and Riser Panels|Value Packs Contains Complete Load Center (Box, Interior and Cover) with Selected Branch Circuit Breaker|||_17701011
 145|QO Riser Panels|QO Riser Panels||||_17701011A
 155|Homeline Indoor 1Ph3W Main Lugs and Main Breaker|Homeline Indoor 1Ph3W Main Lugs and Main Breaker||||_17701015
 166|Homeline Rainproof 1Ph3W Main Lugs and Main Breaker|Homeline Rainproof 1Ph3W Main Lugs and Main Breaker||||_17701015A
-2016.03.15 07.12.07:generate config: solutions
-2016.03.15 07.12.25:generate config: accessories
-2016.03.15 07.12.43:generate config: parts
-2016.03.15 07.13.11:generate localization
-2016.03.15 07.14.24:process completion
+2016.03.15 07.34.42:generate config: solutions
+2016.03.15 07.35.00:generate config: accessories
+2016.03.15 07.35.18:generate config: parts
+2016.03.15 07.35.45:generate localization
+2016.03.15 07.37.01:process completion
